@@ -1,0 +1,137 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-wrapper {
+    max-width: 500px;
+    width: 80%;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .login-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-header .logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .login-header .loginname {
+    font-size: 50px;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;    
+  }
+  
+  .login-form {
+    margin-bottom: 20px;
+  }
+  
+  /* Rest of the CSS remains the same */
+  
+  .login-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+
+  }
+
+
+  
+  .login-form:hover h1 {
+    color: #007bff;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group input[type="password"]:focus {
+    border-color: #007bff;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .forgot-password,
+  .signup-link {
+    display: block;
+    text-align: center;
+    color: #888;
+    transition: color 0.3s ease;
+    padding: 10px;
+  }
+  
+  .forgot-password:hover,
+  .signup-link:hover {
+    color: #007bff;
+  }
+  
+  .signup-link a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 10px;
+  }
+  
+  .signup-link a:hover {
+    color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .login-wrapper {
+      max-width: 300px;
+    }
+  }
+  

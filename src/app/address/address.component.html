@@ -1,0 +1,42 @@
+<div class="container-sm">
+    <h1 class="text-center">Address</h1>
+    <form action="process_address.php" method="POST" class="mt-4">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="form-group">
+            <label for="address_line1"><i class="fas fa-user"></i> CoustomerID</label>
+            <input type="text" id="customer_id" name="customer_id" class="form-control form-control-sm" placeholder="Coustomer ID " [(ngModel)]="customer_id" required>
+          </div>
+          <div class="form-group">
+            <label for="address_line1"><i class="fas fa-map-marker-alt"></i> Address Line 1</label>
+            <input type="text" id="address_line1" name="address_line1" class="form-control form-control-sm" placeholder="Address Line 1" [(ngModel)]="address_line1" required>
+          </div>
+          <div class="form-group">
+            <label for="address_line2"><i class="fas fa-map-marker-alt"></i> Address Line 2</label>
+            <input type="text" id="address_line2" name="address_line2" class="form-control form-control-sm" placeholder="Address Line 2"  [(ngModel)]="address_line2" required>
+          </div>
+          <div class="form-group">
+            <label for="city"><i class="fas fa-city"></i> City</label>
+            <input type="text" id="city" name="city" class="form-control form-control-sm" placeholder="City"  [(ngModel)]="city" required>
+          </div>
+          <div class="form-group">
+            <label for="state"><i class="fas fa-map"></i> State</label>
+            <input type="text" id="state" name="state" class="form-control form-control-sm" placeholder="State"  [(ngModel)]="state" required>
+          </div>
+          <div class="form-group">
+            <label for="postal_code"><i class="fas fa-envelope"></i> Postal Code</label>
+            <input type="text" id="postal_code" name="postal_code" class="form-control form-control-sm" placeholder="Postal Code"  [(ngModel)]="postal_code" required>
+          </div>
+          <div class="form-group">
+            <label for="country"><i class="fas fa-globe"></i> Country</label>
+            <input type="text" id="country" name="country" class="form-control form-control-sm" placeholder="Country" [(ngModel)]="country"  required>
+          </div>
+          <div class="text-center">
+           <a href="/address"> <button type="submit" class="btn btn-primary btn-sm" (click)="onclick()"  routerLink="/addresstable" ><i class="fas fa-save"></i> Save</button></a>
+            <button type="button" class="btn btn-secondary btn-sm"><i class="fas fa-times"></i> Cancel</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  

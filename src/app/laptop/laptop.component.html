@@ -1,0 +1,34 @@
+<h2>Laptops</h2>
+  <div class="container">
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>LaptopID</th>
+          <th>Brand</th>
+          <th>Model</th>
+          <th>Storage</th>
+          <th>RAM</th>
+          <th>Price</th>
+          <th>Description</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let l of laptopdata">
+          <td>{{l.LaptopID}}</td>
+          <td>{{l.Brand}}</td>
+          <td>{{l.Model}}</td>
+          <td>{{l.Storage}}</td>
+          <td>{{l.RAM}}</td>
+          <td>{{l.Price}}</td>
+          <td>{{l.Description}}</td>
+          <td>
+            <div>
+              <a class="edit-icon" href="#"><i class="bi bi-pencil-square"></i></a>
+              <a class="delete-icon" href="#"><i class="bi bi-trash"></i></a>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

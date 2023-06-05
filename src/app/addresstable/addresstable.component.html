@@ -1,0 +1,26 @@
+<table>
+    <thead>
+      <tr>
+        
+        <th>Customer ID</th>
+        <th>Address Line 1</th>
+        <th>Address Line 2</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Postal Code</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let a of show">
+      <tr>
+        <td>{{a.customer_id}}</td>
+        <td>{{a.address_line1}}</td>
+        <td>{{a.address_line2}}</td>
+        <td>{{a.city}}</td>
+        <td>{{a.state}}</td>
+        <td>{{a.postal_code}}</td>
+        <td>{{a.country}}</td>
+      </tr>
+    </tbody>
+  </table>
+  

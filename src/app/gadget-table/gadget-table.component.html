@@ -1,0 +1,34 @@
+<div class="container">
+    <h1>Product Table</h1>
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        
+            <th>ProductID</th>
+          <th>ProductName</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>StockQuantity</th>
+          <th>Description</th>
+          <th >Actions</th>
+        
+
+      </thead>
+      <tbody>
+        <!-- Table rows will be dynamically generated using JavaScript -->
+        <tr *ngFor="let e of productList" >
+        <td>{{e.ProductID}}</td>
+        <td>{{e.ProductName}}</td>
+        <td>{{e.Category}}</td>
+        <td>{{e.Price}}</td>
+        <td>{{e.StockQuantity}}</td>
+        <td>{{e.Description}}</td>
+       <td>
+        <div>
+            <a class="edit-icon" id="iconset" routerLink="/form" ><i class="bi bi-pencil-square"></i></a>  
+            <a class="delete-icon" id="iconset" href="#" ><i class="bi bi-trash"></i></a>                   
+        </div>
+       </td>
+    </tr>
+      </tbody>
+    </table>
+  </div>

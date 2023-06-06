@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { AccoutsComponent } from './accouts/accouts.component';
 import { AddressComponent } from './address/address.component';
 import { AddresstableComponent } from './addresstable/addresstable.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { AddresstableComponent } from './addresstable/addresstable.component';
     HomeComponent,
     AccoutsComponent,
     AddressComponent,
-    AddresstableComponent
+    AddresstableComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

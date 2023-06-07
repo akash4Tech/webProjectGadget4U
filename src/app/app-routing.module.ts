@@ -10,6 +10,7 @@ import { AddressComponent } from './address/address.component';
 import { AddresstableComponent } from './addresstable/addresstable.component';
 import { FormComponent } from './form/form.component';
 import { SignupComponent } from './signup/signup.component';
+import { SlideBarComponent } from './slide-bar/slide-bar.component';
 
 const routes: Routes = [  
   {
@@ -25,7 +26,10 @@ const routes: Routes = [
                           {path:'address',component:AddresstableComponent},
                           {path:'form',component:FormComponent},
                           {path:'signup',component:SignupComponent},
-                          {path:'**', component:HomeComponent},
+                          {path:'**', component:SlideBarComponent},
+                          // {path:'**', component:HomeComponent},
+
+
 
                        
                       ];

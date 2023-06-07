@@ -16,6 +16,8 @@ import { AccoutsComponent } from './accouts/accouts.component';
 import { AddressComponent } from './address/address.component';
 import { AddresstableComponent } from './addresstable/addresstable.component';
 import { SignupComponent } from './signup/signup.component';
+import { SlideBarComponent } from './slide-bar/slide-bar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -30,13 +32,16 @@ import { SignupComponent } from './signup/signup.component';
     AccoutsComponent,
     AddressComponent,
     AddresstableComponent,
-    SignupComponent
+    SignupComponent,
+    SlideBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+  
   ],
   providers: [ServiceService],
   bootstrap: [AppComponent]

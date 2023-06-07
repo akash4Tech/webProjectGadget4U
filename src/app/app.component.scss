@@ -90,9 +90,49 @@ body {
       transform: rotate(360deg);
     }
 
+  .dropdown, .dropleft, .dropright, .dropup {
+      position: relative;
+      padding: 0px 20px;
+  }
+
+.input-group, .form-control{
+  width: 400px;
+}
 
 
 
+/// below nav abar section 
+
+.bg-dark {
+  background-color: #343a40;
+}
+
+.container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.row {
+  justify-content: center;
+}
+
+.col-md-2 {
+  text-align: center;
+}
+
+.col-md-2 a {
+  display: block;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.col-md-2 a:hover {
+  color: #ffcc00;
+  transform: scale(1.05);
+}
 
 
 

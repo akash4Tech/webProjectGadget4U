@@ -118,7 +118,7 @@ app.get("/address", (req, res) => {
 
 
  app.post("/addproduct", (req, res) => {
-  connection.query("insert into Product(ProductID, ProductName, Category, Price, StockQuantity, Description) values(?,?,?,?,?,?)",[req.body.ProductID, req.body.ProductName, req.body.Category, req.body.Price, req.body.StockQuantity, req.body.Description], function (error, results) {
+  connection.query("insert into Product(ProductName, Category, Price, StockQuantity, Description) values(?,?,?,?,?)",[req.body.ProductName, req.body.Category, req.body.Price, req.body.StockQuantity, req.body.Description], function (error, results) {
     if (error) {
       console.log(error);
       console.log("result");
@@ -129,6 +129,8 @@ app.get("/address", (req, res) => {
   });
 });
 
+
+//
   
 
 

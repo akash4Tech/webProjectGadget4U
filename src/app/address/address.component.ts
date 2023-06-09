@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { ServiceService } from '../service.service';
 
 @Component({
@@ -24,7 +24,7 @@ export class AddressComponent  {
   body:any;
 
   onclick(){
-    let body={
+    let body:any={
       customer_id:this.customer_id,
       address_line1:this.address_line1,
       address_line2:this.address_line2,

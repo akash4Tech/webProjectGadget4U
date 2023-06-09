@@ -5,40 +5,43 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ServiceService {
+  url = '';
 
-  url=''
+  constructor(private http: HttpClient) {}
 
-  constructor(private http:HttpClient)  { }
-
-  getProductList(){
-    this.url='http://localhost:3000/getproducts'
-    return this.http.get(this.url)
+  getProductList() {
+    this.url = 'http://localhost:3000/getproducts';
+    return this.http.get(this.url);
   }
 
-  getMobiles(){
-    this.url='http://localhost:3000/getMobiles'
-    return this.http.get(this.url)
+  getMobiles() {
+    this.url = 'http://localhost:3000/getMobiles';
+    return this.http.get(this.url);
   }
 
-  getLaptops(){
-    this.url='http://localhost:3000/getLaptops'
-    return this.http.get(this.url)
-  }
-  
-  getaddress(){
-    this.url='http://localhost:3000/address'
-    return this.http.get(this.url)
+  getLaptops() {
+    this.url = 'http://localhost:3000/getLaptops';
+    return this.http.get(this.url);
   }
 
-  insertaddress(body:any){
-    this.url='http://localhost:3000/insert'
-    return this.http.post(this.url,body)
+  getaddress() {
+    this.url = 'http://localhost:3000/address';
+    return this.http.get(this.url);
+  }
+
+  insertaddress(body: any) {
+    this.url = 'http://localhost:3000/insert';
+    return this.http.post(this.url, body);
   }
 
 
-
+addproduct(data:any) {
+  this.url = 'http://localhost:3000/addproduct'
+  return this.http.post(this.url,data)
+}
 
 }
+
 
 
 

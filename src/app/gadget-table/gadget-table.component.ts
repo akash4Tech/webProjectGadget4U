@@ -22,5 +22,12 @@ export class GadgetTableComponent implements OnInit {
 
     
   }
-      
+    
+  getall(){
+    this.service.addproduct(this.productList).subscribe((data)=>{
+
+      this.productList=data
+
+    })
+  }
 }
